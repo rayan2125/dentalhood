@@ -124,6 +124,7 @@ const Banner = () => {
                 <Slider {...sliderSettings} className="event-carousel">
                     {events.map((event, index) => (
                         <div key={index} className="event-slide">
+                            
                             <img src={event.image} alt={event.title} className="event-image" />
                             <div className="">
                                 <h2>{event.title}</h2>

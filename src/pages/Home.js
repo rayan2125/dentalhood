@@ -9,6 +9,8 @@ import Features from '../sections/Features/Features';
 import Footer from '../sections/Footer/Footer';
 import Services from '../sections/Services/Services';
 import Testimonial from '../sections/Testimonial/Testimonial';
+import Dealers from './Dealers';
+import WallOfFame from './WallOframe';
 
 const Home = () => {
 
@@ -16,6 +18,8 @@ const Home = () => {
         <>
             <Navbar/>
             <Banner/>
+            <Dealers/>
+            <WallOfFame/>
             <Services/>
             <Emergency/>
             <Features />

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Navbar.scss';
 import logo from './../../assets/Logo1.png';
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
 
@@ -13,6 +13,10 @@ const Navbar = () => {
         {
             name: 'About Us',
             path: '/about',
+        },
+        {
+            name: 'Dental Dealers',
+            path: '/dentaldetails'
         },
         {
             name: 'Single Service',
@@ -38,20 +42,20 @@ const Navbar = () => {
                             {/* <img src={logo} alt="logo" /> */}
                         </Link>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                            <span className="navbar-toggler-icon"></span>
                         </button>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             {/* Navbar Link */}
                             <ul className="navbar-nav m-auto mb-2 mb-lg-0">
-                               { 
-                                navbarItems.map (navSingle =>
-                                    <li className="nav-item">
-                                        <Link className="nav-link" to={navSingle.path}>{navSingle.name}</Link>
-                                    </li>
-                                    ) 
+                                {
+                                    navbarItems.map(navSingle =>
+                                        <li className="nav-item">
+                                            <Link className="nav-link" to={navSingle.path}>{navSingle.name}</Link>
+                                        </li>
+                                    )
                                 }
                             </ul>
-                            
+
                             {/* Navbar Button */}
                             <div className="theme-btn">
                                 <Link >Login</Link>
