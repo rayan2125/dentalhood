@@ -18,12 +18,13 @@ const Home = () => {
         <>
             <Navbar/>
             <Banner/>
+            <Expert/>
             <Dealers/>
             <WallOfFame/>
             <Services/>
             <Emergency/>
             <Features />
-            <Expert/>
+            
             <Testimonial/>
             <Blogs/>
             <Appointment/>
